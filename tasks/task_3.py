@@ -9,6 +9,7 @@ def validate_positive(func):
                 isinstance(element, (int, float))
                 and element <= 0
             ):
-                raise ValueError('Все аргументы должны быть положительными')
+                raise ValueError("Все аргументы должны быть положительными")
         return func(*args, **kwargs)
+
     return validator
