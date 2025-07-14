@@ -13,4 +13,5 @@ def simple_cache(func):
         result = func(*args, **kwargs)
         cache[hash] = result
         return result
+
     return cacher
